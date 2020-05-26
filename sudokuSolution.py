@@ -1,38 +1,3 @@
-# given the sudoku grid on a 2D array, return an array with all possible solutions. 
-# def sudokuSolution(data):
-#     for x in range(9):
-#         for y in range(9):
-#             if data[x][y] == 0:
-#                 for value in range(1,10):
-#                     # If possible value, continue. Else, continue
-#                     for i in range(9):
-#                         if data[x][i] == value or data[i][y] == value:
-#                             continue
-#                         xIndex = (x // 3) * 3
-#                         yIndex = (y // 3) * 3
-#                         for i in range(3):
-#                             for j in range(3):
-#                                 if data[xIndex + i][yIndex + j] == value:
-#                                     continue
-#                         #If here, possible value
-#                         data[x][y] = value
-#                         sudokuSolution(data)
-#                         data[x][y] = 0;#if I'm here, the path i took wasn't good => undo the move
-#                         # return True
-#                     return
-#     print(data)
-
-# data = [[0, 0, 0, 0, 0, 0, 0, 0, 0],
-#        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-#        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-#        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-#        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-#        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-#        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-#        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-#        [0, 0, 0, 0, 0, 0, 0, 0, 0]];
-
-
 def printSudoku(arr):
     print(*["+"] + ["-" for i in range(23)] + ["+"], sep = "");#start
 
